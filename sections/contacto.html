@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Incluyendo Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Incluyendo Hoja de estilos-->
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-5">
+            <!--Logo-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo_preview_rev_1.png" alt="Industrias PLAV">
+            </a>
+            <!--Boton colapsable-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos navegador-->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <div class="row justify-content-center align-items-center">
+            <!--Columna izquierda-->
+            <div class="col-lg-5">
+                <!-- Contact form-->
+                <div class="bg-light rounded-3 py-5 px-2 my-2 mx-2">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">Contáctanos</h1>
+                        <p class="lead fw-normal text-muted mb-0">Lo atenderemos a la brevedad</p>
+                    </div>
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Nombre-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Nombre completo">
+                            <label for="name">Nombre completo</label>
+                        </div>
+                        <!-- Correo-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="nombre@ejemplo.com" />
+                            <label for="email">Correo electrónico</label>
+                        </div>
+                        <!-- Telefono-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                            <label for="phone">Número de contacto</label>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <label for="message">Su mensaje</label>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg enabled" id="submitButton"
+                                type="submit">Enviar</button></div>
+                    </form>
+                </div>
+            </div>
+            <!--Columna derecha-->
+            <div class="col-lg-7">
+                <!-- Tarjeta mapa-->
+                <div class="card py-2 px-2 my-2 mx-2">
+                    <div class="card-body">
+                        <h3 class="card-title">O puedes visitarnos en</h3>
+                        <p class="card-text">C. 52 207, Prados San Vicente, San Luis Potosí, S.L.P.</p>
+                        <a href="https://www.google.com/maps/place/INDUSTRIAS+PLAV,+S+DE+RL+DE+CV/@22.128599,-100.91782,15z/data=!4m5!3m4!1s0x0:0x89c466a53f5f3d5!8m2!3d22.1285834!4d-100.9177328?hl=es-419"
+                            class="btn btn-primary" e>Ver en Maps</a>
+                    </div>
+                    <div class="map-responsive card-img-bottom">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.9311906683083!2d-100.92000828445802!3d22.128599085412866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa3774d35f0b7%3A0x89c466a53f5f3d5!2sINDUSTRIAS%20PLAV%2C%20S%20DE%20RL%20DE%20CV!5e0!3m2!1ses-419!2smx!4v1643484184878!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid mt-auto py-5 bg-dark">
+        <div class="px-4 px-lg-5">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+        </div>
+    </footer>
+
+    <!--Incluyendo Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

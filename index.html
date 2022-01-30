@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BOOTSTRAP</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Incluyendo Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Incluyendo Hoja de estilos-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-5">
+            <!--Logo-->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo_preview_rev_1.png" alt="Industrias PLAV">
+            </a>
+            <!--Boton colapsable-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos navegador-->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container px-4 px-lg-5">
+        <!-- Linea encabezado-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7">
+                <!--Carrusel-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner shadow-lg">
+                        <div class="carousel-item active">
+                            <img src="./images/sample images/cnc.jpg" class="d-block w-100 img-thumbnail" alt="CNC">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sample images/erosion3_1.jpg" class="d-block w-100 img-thumbnail"
+                                alt="erosionado  ">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sample images/fresa.jpg" class="d-block w-100 img-thumbnail"
+                                alt="fresado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sample images/torneado.jpg" class="d-block w-100 img-thumbnail"
+                                alt="torneado">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center ">
+                <h1 class="font-weight-light "> INDUSTRIAS PLAV </h1>
+                <h1><small class="text-muted">S. de R.L. de C.V</small></h1>
+                <p class="text-start">Somos una empresa dedicada al desarrollo y fabricación de piezas maquinadas
+                    agregando valor a los procesos productivos de nuestros clientes y a la cadena de suministro </p>
+                <a class="btn btn-primary" href="./sections/contacto.html">CONTÁCTANOS</a>
+            </div>
+        </div>
+
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            <!--Tarjeta 1-->
+            <div class="col-md-4 mb-5">
+                <div class="card justify-content-center text-center">
+                    <img class="card-img-top d-block w-100 px-5 py-3" src="./images/milling-machine.png" alt="Torneado">
+                    <div class="card-body">
+                        <h2 class="card-title">Torneado</h2>
+                        <p class="card-text ">Operaciones de cilindrado, careado, ranurado, roscado y tronzado</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+            <!--Tarjeta 2-->
+            <div class="col-md-4 mb-5">
+                <div class="card justify-content-center text-center">
+                    <img class="card-img-top d-block w-100 px-5 py-3" src="./images/turning-machine.png" alt="Torno">
+                    <div class="card-body">
+                        <h2 class="card-title">Fresado</h2>
+                        <p class="card-text text-center">Mecanizado de piezas rectangulares y barrenados.</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+            <!--Tarjeta 3-->
+            <div class="col-md-4 mb-5 ">
+                <div class="card justify-content-center text-center">
+                    <img class="card-img-top d-block w-100 px-5 py-3" src="./images/welding.png" alt="Soldadura">
+                    <div class="card-body">
+                        <h2 class="card-title">Rectificado</h2>
+                        <p class="card-text text-center">Fabricacion de piezas de precision en piezas planas o
+                            cilindrico</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid mt-auto py-5 bg-dark">
+        <div class="px-4 px-lg-5">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+        </div>
+    </footer>
+    <!--Incluyendo Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
