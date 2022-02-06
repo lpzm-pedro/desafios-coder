@@ -1,13 +1,24 @@
+/*Reset*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*Estilo General*/
 body {
-    /*properties*/
-    background-color: lightgray;
+    background-color: $colorBody;
+
+    header {
+        background-color: $colorHeader;
+    }
+
+    footer {
+        background-color: $colorFooter;
+    }
+
 }
+
 
 
 /*Sección Contacto*/
