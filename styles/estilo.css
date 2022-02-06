@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Estilo General*/
+body {
+  background-color: #e9e9e9;
+}
+
+body header {
+  background-color: #919191;
+}
+
+body footer {
+  background-color: black;
+}
+
+/*Sección Contacto*/
+/*Mapa*/
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*# sourceMappingURL=estilo.css.map */
