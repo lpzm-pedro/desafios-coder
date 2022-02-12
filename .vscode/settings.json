@@ -2,5 +2,10 @@
     "cSpell.enableFiletypes": [
         "html"
     ],
-    "cSpell.language": "en,es"
+    "cSpell.language": "en,es",
+    "cSpell.words": [
+        "metalmecanica",
+        "metalmecánica",
+        "subtexto"
+    ]
 }
