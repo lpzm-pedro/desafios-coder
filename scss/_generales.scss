@@ -1,11 +1,11 @@
-/*Reset*/
+//Reset
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*Estilo General*/
+//Estilo General
 body {
     background-color: $colorBody;
 
@@ -17,35 +17,4 @@ body {
         background-color: $colorFooter;
     }
 
-}
-
-/*Sección Inicio*/
-.bienvenida {
-    h1 {
-        font-size: xx-large;
-        color: rgb(134, 0, 0);
-    }
-
-    h2 {
-        font-size: large;
-        color: rgb(200, 0, 0);
-    }
-}
-
-/*Sección Contacto*/
-
-/*Mapa*/
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 50%;
-    position: relative;
-    height: 0;
-
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
 }
