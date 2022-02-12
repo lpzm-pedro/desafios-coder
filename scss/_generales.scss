@@ -9,7 +9,7 @@
 body {
     background-color: $colorBody;
 
-    header {
+    nav {
         background-color: $colorHeader;
     }
 
@@ -19,7 +19,18 @@ body {
 
 }
 
+/*Sección Inicio*/
+.bienvenida {
+    h1 {
+        font-size: xx-large;
+        color: rgb(134, 0, 0);
+    }
 
+    h2 {
+        font-size: large;
+        color: rgb(200, 0, 0);
+    }
+}
 
 /*Sección Contacto*/
 
